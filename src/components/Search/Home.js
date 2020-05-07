@@ -12,7 +12,7 @@ function Home(){
     const handleSubmit = (e) => {
         e.preventDefault();
         async function fetchData() {
-            let response = await searchPokemon(Url + pokemonInput)
+            let response = await searchPokemon(Url + pokemonInput.toLowerCase())
             setData(response);
             }
             fetchData(); 
