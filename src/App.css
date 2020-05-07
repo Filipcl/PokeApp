@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-container {
+  width: 70%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.theme-btn{
+  margin-left: 725px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#switch-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+  visibility: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.switch-btn {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 70px;
+	height: 30px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+  position: relative;
+}
+
+.switch-btn:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 20px;
+	transition: 0.3s;
+}
+
+input:checked + .switch-btn {
+	background: #6DB65B; 
+}
+
+input:checked + .switch-btn:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.switch-btn:active:after {
+	width: 40px;
+}
+
+
+
+@media only screen and (max-width: 799px) {
+  
+.grid-container {
+  width: 70%;
+}
+#btn-bottom{
+  margin-bottom: 7rem;
+}
 }

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .grid-container {
+    width: 70%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .btn button {
+    border-style: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  
+@media only screen and (max-width: 799px) {
+  .choose-btn{
+      width: 30%;
+  }
+
+}
+
+
