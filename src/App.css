@@ -66,9 +66,13 @@ input:checked + .switch-btn:after {
 @media only screen and (max-width: 799px) {
   
 .grid-container {
-  width: 70%;
+	margin-bottom: 100px;
+	justify-content: center;
 }
 #btn-bottom{
   margin-bottom: 7rem;
 }
+#switch-container{
+	margin-bottom: 0;
+  }
 }
