@@ -31,7 +31,7 @@ function Home(){
                         <label className="form-label">Choose Pokemon</label>
                         <input className="input-field" type="text" value={pokemonInput} required onChange={(e) => setPokemonInput(e.target.value)} placeholder="Enter Name"></input>
                         <div><p id="Error"></p></div>
-                        <input className="choose-btn" type="submit" value="I Choose You"></input>
+                        <input className="choose-btn1" type="submit" value="I Choose You"></input>
                     </form>
                     <div className="card-container">
                     <div className="grid-container">

@@ -26,6 +26,9 @@ body::-webkit-scrollbar-thumb {
 .choose-btn{
   background-color: ${props => props.theme.mode === 'dark' ? '#dfa612' : '#6DB65B'};
 }
+.choose-btn1{
+  background-color: ${props => props.theme.mode === 'dark' ? '#dfa612' : '#6DB65B'};
+}
 .input-field{
   color: ${props => props.theme.mode === 'dark' ? '#F9FFEE' : '#000'};
 }
